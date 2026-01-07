@@ -379,7 +379,7 @@ idecustomfont = VAL(value$)
 IF UCASE$(value$) = "TRUE" OR idecustomfont <> 0 THEN
     idecustomfont = 1
 ELSE
-    WriteConfigSetting displaySettingsSection$, "IDE_CustomFont", "False"
+    WriteConfigSetting displaySettingsSection$, "IDE_CustomFont", "True"
     idecustomfont = 0
 END IF
 
@@ -526,4 +526,5 @@ ELSE WriteConfigSetting colorSettingsSection$, "BackgroundColor2", rgbs$(IDEBack
 END IF
 
 'End of initial settings ------------------------------------------------------
+
 
